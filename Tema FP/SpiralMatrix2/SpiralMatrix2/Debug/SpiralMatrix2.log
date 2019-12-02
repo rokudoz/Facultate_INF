@@ -1,0 +1,7 @@
+﻿  SpiralMatrix2.cpp
+C:\Users\Rokudo\source\repos\SpiralMatrix2\SpiralMatrix2\SpiralMatrix2.cpp(6,13): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+C:\Users\Rokudo\source\repos\SpiralMatrix2\SpiralMatrix2\SpiralMatrix2.cpp(23,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Rokudo\source\repos\SpiralMatrix2\SpiralMatrix2\SpiralMatrix2.cpp(27,34): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Rokudo\source\repos\SpiralMatrix2\SpiralMatrix2\SpiralMatrix2.cpp(31,36): warning C4018:  '>': signed/unsigned mismatch
+C:\Users\Rokudo\source\repos\SpiralMatrix2\SpiralMatrix2\SpiralMatrix2.cpp(36,34): warning C4018:  '>': signed/unsigned mismatch
+  SpiralMatrix2.vcxproj -> C:\Users\Rokudo\source\repos\SpiralMatrix2\Debug\SpiralMatrix2.exe

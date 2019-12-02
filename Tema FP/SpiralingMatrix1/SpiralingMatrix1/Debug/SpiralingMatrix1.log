@@ -1,0 +1,6 @@
+﻿  SpiralingMatrix1.cpp
+C:\Users\Rokudo\source\repos\SpiralingMatrix1\SpiralingMatrix1\SpiralingMatrix1.cpp(46,43): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Rokudo\source\repos\SpiralingMatrix1\SpiralingMatrix1\SpiralingMatrix1.cpp(61,40): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Rokudo\source\repos\SpiralingMatrix1\SpiralingMatrix1\SpiralingMatrix1.cpp(76,37): warning C4018:  '>': signed/unsigned mismatch
+C:\Users\Rokudo\source\repos\SpiralingMatrix1\SpiralingMatrix1\SpiralingMatrix1.cpp(90,34): warning C4018:  '>': signed/unsigned mismatch
+  SpiralingMatrix1.vcxproj -> C:\Users\Rokudo\source\repos\SpiralingMatrix1\Debug\SpiralingMatrix1.exe

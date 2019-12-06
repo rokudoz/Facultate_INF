@@ -1,73 +1,94 @@
-
 #include <iostream>
+
 using namespace std;
 
+bool isPrime(int x);
+void checkNrOfElements(int n, int p, int q, int r, int& nrOfElements);
+bool divizibil(int x, int nrPrim);
 
-bool estePrim(int n) {
-	bool isPrime = true;
-	for (int i = 2; i <= n / 2; ++i)
+int main() {
+	int n = 0, p = 0, q = 0, r = 0;
+	int nrOfElements = 0;
+	cout << "n= ";
+	cin >> n;
+	cout << "p= ";
+	cin >> p;
+	cout << "q= ";
+	cin >> q;
+	cout << "r= ";
+	cin >> r;
+
+	if (!isPrime(p)) {
+		cout << "p nu este prim";
+		return 0;
+	}
+	if (!isPrime(q)) {
+		cout << "q nu este prim";
+		return 0;
+	}
+	if (!isPrime(r)) {
+		cout << "r nu este prim";
+		return 0;
+	}
+	if (p == q || p == r || q == r || p == 0 || q == 0 || r == 0) {
+		cout << "p,q,r nu sunt distincte sau unul dintre ele este nul";
+		return 0;
+	}
+
+	checkNrOfElements(n, p, q, r, nrOfElements);
+}
+
+void checkNrOfElements(int n, int p, int q, int r, int& nrOfElements)
+{
+	for (size_t i = 0; i < n; i++)
 	{
-		if (n % i == 0)
+		bool incremented = false;
+		if (divizibil(i, p))
 		{
-			isPrime = false;
-			break;
+			cout << i << " este divizibil cu " << p << endl;
+			if (!incremented)
+			{
+				nrOfElements++;
+				incremented = true;
+			}
+		}
+		if (divizibil(i, q))
+		{
+			cout << i << " este divizibil cu " << q << endl;
+			if (!incremented)
+			{
+				nrOfElements++;
+				incremented = true;
+			}
+		}
+		if (divizibil(i, r))
+		{
+			cout << i << " este divizibil cu " << r << endl;
+			if (!incremented)
+			{
+				nrOfElements++;
+				incremented = true;
+			}
 		}
 	}
-
-	return isPrime;
-
+	cout << "Numarul de elemente divizibile cu p,q sau r este de " << nrOfElements << " elemente\n";
 }
 
-int verificare(int pqr, char nume) {
-	if (!estePrim(pqr)) {
-		cout << nume << "=" << pqr << " nu este prim, reintroduceti: " << endl;
-		cin >> pqr;
-		verificare(pqr, nume);
-	}
+bool isPrime(int x) {
+	bool prime = true;
+
+	if (x > 1)
+		for (size_t i = 2; i <= x / 2; i++)
+			if (x % i == 0) {
+				prime = false;
+				break;
+			}
+	return prime;
+}
+
+bool divizibil(int x, int nrPrim) {
+	if (x % nrPrim == 0 && x != 0)
+		return true;
 	else
-		return pqr;
-
-}
-
-void divizibilitate(int lungime, int pqr) {
-	cout << "\n Divizibil cu " << pqr << ":" << endl;
-	for (int i = 2; i <= lungime; i++) {
-		if (i % pqr == 0)
-			cout << i << " ";
-	}
-	cout << endl;
-}
-
-void divizToateTrei(int lungime, int p, int q, int r) {
-	cout << "\n Divizibil cu toate 3:" << endl;
-	for (int i = 1; i <= lungime; i++) {
-		if (i % p == 0 && i % q == 0 && i % r == 0)
-			cout << i << " ";
-	}
-	cout << endl;
-
-}
-
-
-
-int main()
-{
-	int lungimeSir, p, q, r;
-	cout << "Lungime sir: " << endl;
-	cin >> lungimeSir;
-
-	cout << "Introduceti p , q , r:" << endl;
-	cin >> p >> q >> r;
-
-	p = verificare(p, 'p');
-	q = verificare(q, 'q');
-	r = verificare(r, 'r');
-
-	divizibilitate(lungimeSir, p);
-	divizibilitate(lungimeSir, q);
-	divizibilitate(lungimeSir, r);
-
-	divizToateTrei(lungimeSir, p, q, r);
-
-	return 0;
+		return false;
 }

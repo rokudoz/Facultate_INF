@@ -16,6 +16,9 @@ void afisareListaInvers(Nod* cap);
 void inserareLaInceput(Nod*& cap, int valoare);
 void inserareFinal(Nod*& cap, int valoare);
 
+// MOD AFISARE INVERS 2
+void afisareListInvers2(Nod* cap);
+Nod* ultimul_element = NULL;
 
 // Main
 void main() {
@@ -26,7 +29,8 @@ void main() {
 	cout << "Lista cap coada\n ";
 	afisareLista(cap);
 	cout << "\n\nLista coada cap \n\n ";
-	afisareListaInvers(cap);
+	//afisareListaInvers(cap);
+	afisareListInvers2(ultimul_element);
 }
 
 void afisareListaInvers(Nod* cap) {
@@ -41,6 +45,14 @@ void afisareListaInvers(Nod* cap) {
 	}
 	cout << coada->numar << endl;
 
+}
+
+void afisareListInvers2(Nod* cap) {
+	while (cap->precedent != NULL)
+	{
+		cout << cap->numar << " ";
+		cap = cap->precedent;
+	}
 }
 
 void afisareLista(Nod* cap) {
@@ -59,6 +71,7 @@ void inserareLaInceput(Nod*& cap, int valoare) {
 
 	if (cap != NULL) {
 		cap->precedent = newNod;
+		ultimul_element = cap;
 	}
 	cap = newNod;	//Inlocuim primul element din lista
 }
@@ -82,4 +95,5 @@ void inserareFinal(Nod*& cap, int valoare)
 		nod_curent->urmator = elem_final;
 		elem_final->precedent = nod_curent;
 	}
+	ultimul_element = elem_final;
 }

@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\paras\Documents\GitHub\Facultate_INF\Programe SDTEA\SingleLinkedList\SingleLinkedList\Source.cpp(22,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\paras\Documents\GitHub\Facultate_INF\Programe SDTEA\SingleLinkedList\SingleLinkedList\Source.cpp(25,23): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  SingleLinkedList.vcxproj -> C:\Users\paras\Documents\GitHub\Facultate_INF\Programe SDTEA\SingleLinkedList\x64\Debug\SingleLinkedList.exe

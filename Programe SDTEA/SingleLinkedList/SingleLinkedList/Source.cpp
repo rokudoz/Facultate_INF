@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 struct Nod
 {
 	int numar;      //Memorarea efectiva a numarului
@@ -13,6 +12,7 @@ Nod* cap = NULL;    //Declararea listei vida
 
 // Prototip functii
 void afisareLista(Nod* cap);
+void afisareListaInvers(Nod* cap);
 void inserareLaInceput(Nod*& cap, int valoare);
 void inserareFinal(Nod*& cap, int valoare);
 
@@ -23,13 +23,30 @@ void main() {
 	{
 		inserareFinal(cap, i);
 	}
+	cout << "Lista cap coada\n ";
 	afisareLista(cap);
+	cout << "\n\nLista coada cap \n\n ";
+	afisareListaInvers(cap);
+}
+
+void afisareListaInvers(Nod* cap) {
+	Nod* coada = cap;
+	while (coada->urmator != NULL)
+		coada = coada->urmator;
+
+	while (coada != cap)
+	{
+		cout << coada->numar << " ";
+		coada = coada->precedent;
+	}
+	cout << coada->numar << endl;
+
 }
 
 void afisareLista(Nod* cap) {
 	while (cap != NULL)
 	{
-		cout << cap->numar << "\n";	// Afisam numarul stocat 
+		cout << cap->numar << " ";	// Afisam numarul stocat 
 		cap = cap->urmator;	// Mutam elementul curent la urmatorul element din lista
 	}
 }
@@ -40,7 +57,7 @@ void inserareLaInceput(Nod*& cap, int valoare) {
 	newNod->numar = valoare;
 	newNod->urmator = cap;	//Mutam sageata catre primul element din lista
 
-	if (cap != NULL){
+	if (cap != NULL) {
 		cap->precedent = newNod;
 	}
 	cap = newNod;	//Inlocuim primul element din lista

@@ -1,0 +1,3 @@
+﻿  Mincols1.cpp
+C:\Users\paras\source\repos\Mincols1\Mincols1\Mincols1.cpp(8,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Mincols1.vcxproj -> C:\Users\paras\source\repos\Mincols1\Debug\Mincols1.exe

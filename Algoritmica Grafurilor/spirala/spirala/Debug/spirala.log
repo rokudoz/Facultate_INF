@@ -1,0 +1,6 @@
+﻿  spirala.cpp
+C:\Users\paras\source\repos\spirala\spirala\spirala.cpp(43,34): warning C4018: '<': signed/unsigned mismatch
+C:\Users\paras\source\repos\spirala\spirala\spirala.cpp(48,36): warning C4018: '<': signed/unsigned mismatch
+C:\Users\paras\source\repos\spirala\spirala\spirala.cpp(53,38): warning C4018: '>': signed/unsigned mismatch
+C:\Users\paras\source\repos\spirala\spirala\spirala.cpp(59,36): warning C4018: '>': signed/unsigned mismatch
+  spirala.vcxproj -> C:\Users\paras\source\repos\spirala\Debug\spirala.exe

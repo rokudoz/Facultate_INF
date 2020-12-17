@@ -1,0 +1,7 @@
+﻿  TemaGeometrie.cpp
+TemaGeometrie.obj : error LNK2019: unresolved external symbol _circle referenced in function _main
+TemaGeometrie.obj : error LNK2019: unresolved external symbol _line referenced in function _main
+TemaGeometrie.obj : error LNK2019: unresolved external symbol _delay referenced in function _main
+TemaGeometrie.obj : error LNK2019: unresolved external symbol _setlinestyle referenced in function _main
+TemaGeometrie.obj : error LNK2019: unresolved external symbol _initwindow referenced in function _main
+C:\Users\paras\source\repos\TemaGeometrie\Debug\TemaGeometrie.exe : fatal error LNK1120: 5 unresolved externals

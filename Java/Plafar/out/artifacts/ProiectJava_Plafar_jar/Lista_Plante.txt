@@ -1,0 +1,7 @@
+mere ;1 ;1.4
+pere ;1 ;4.1
+nuci ;2 ;2.5
+covrigi ;2 ;3.3
+bucata de sorici ;0 ;2.3
+floricele maro ;21 ;11.0
+hehehe ;232 ;322.0

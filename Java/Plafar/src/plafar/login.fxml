@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plafar.LoginController">
+   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+      <children>
+         <TextField id="username_field" fx:id="username_field" maxWidth="250.0" promptText="username" />
+         <PasswordField id="password_field" fx:id="password_field" maxWidth="250.0" promptText="password">
+            <VBox.margin>
+               <Insets top="8.0" />
+            </VBox.margin>
+         </PasswordField>
+          <Button id="login_btn" fx:id="login_btn" defaultButton="true" onAction="#logIn" text="Log In">
+            <VBox.margin>
+               <Insets top="8.0" />
+            </VBox.margin>
+         </Button>
+      </children>
+   </VBox>
+
+</StackPane>

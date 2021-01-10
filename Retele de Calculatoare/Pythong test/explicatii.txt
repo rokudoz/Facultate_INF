@@ -1,0 +1,10 @@
+Nume: Paraschiv Longin Robert
+Grupa: 223
+Subgrupa: 223b
+Problema: webstat
+
+
+Aplicatia trimite request-uri catre serverele / Ip-urile specificate in fisiserul lista- servere-web.txt.
+Daca aplicatia primeste un raspuns, serverul este marcat ca fiind "activ", altfel daca nu primeste nimic sau este refuzat, acesta este marcat ca fiind "inactiv".
+Aplicatia trimite request-urile catre toate serverele specificate atunci cand aceasta este pornita, apoi din 5 in 5 minute trimite din nou.
+Ultimul status al request-ului este stocat intr-o lista, si modificat daca este diferit de cel anterior, urmand sa se afiseze acest lucru in consola.

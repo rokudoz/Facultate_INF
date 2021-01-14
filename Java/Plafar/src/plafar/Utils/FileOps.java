@@ -34,7 +34,7 @@ public class FileOps {
         return plantList;
     }
 
-    public static List<User> getUserList() {
+    public static List<User> getUserList() throws IOException {
         List<User> userList = new ArrayList<>();
 
         try {
@@ -49,6 +49,15 @@ public class FileOps {
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
+
+            //Login file did not exist, create one with dummy account
+            FileOutputStream fileOut = new FileOutputStream("login_info.txt");
+            String dummyAccount = "admin;admin";
+            fileOut.write(dummyAccount.getBytes());
+            fileOut.close();
+            userList = getUserList();
+
+            System.out.println("Fisierul login_info.txt nu a fost gasit, a fost creat in schimb unul cu un cont prestabilit");
         }
 
         return userList;

@@ -40,7 +40,11 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        userList = FileOps.getUserList();
+        try {
+            userList = FileOps.getUserList();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void logIn(ActionEvent event) throws IOException {

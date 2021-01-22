@@ -1,5 +1,5 @@
 ﻿  Source.cpp
-C:\Users\paras\source\repos\Project2\Project2\Source.cpp(46,24): warning C4018: '<': signed/unsigned mismatch
-C:\Users\paras\source\repos\Project2\Project2\Source.cpp(60,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\paras\source\repos\Project2\Project2\Source.cpp(67,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Project2.vcxproj -> C:\Users\paras\source\repos\Project2\Debug\Project2.exe
+C:\Users\paras\Documents\GitHub\Facultate_INF\Algoritmica Grafurilor\Project2\Project2\Source.cpp(46,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\paras\Documents\GitHub\Facultate_INF\Algoritmica Grafurilor\Project2\Project2\Source.cpp(60,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\paras\Documents\GitHub\Facultate_INF\Algoritmica Grafurilor\Project2\Project2\Source.cpp(67,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Project2.vcxproj -> C:\Users\paras\Documents\GitHub\Facultate_INF\Algoritmica Grafurilor\Project2\Debug\Project2.exe
